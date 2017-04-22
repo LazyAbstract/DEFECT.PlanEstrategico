@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 16.75, 29.875" name="DEFECTPlanEstrategico">
+  <DataContextMoniker Name="/DEFECTPlanEstrategicoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d2ed1a0a-897b-47fb-88ad-702a8067c23d" absoluteBounds="9.5, 6.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/Atributo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="01b6a76e-ea1e-4313-bdd6-6c7d71938505" absoluteBounds="9.515, 7.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8a8706e-13de-41d1-8954-2b17ee6b004e" absoluteBounds="4.25, 2, 2, 1.9631982421874998">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9cd6682a-e466-4f1c-acf7-ca198a4c0b90" absoluteBounds="4.265, 2.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7a53e3f5-b768-46c4-af7c-cc6fc64af6b6" absoluteBounds="6.25, 13, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/Calendario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2dda8bda-def4-43dc-b1a0-f192207a3e3f" absoluteBounds="6.265, 13.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="752288ec-8295-4bbb-bfd0-8ca8fc1d9e14" absoluteBounds="0.75, 10.375, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/Campana" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f31d7527-93ae-4b5a-9e94-97b97005e50a" absoluteBounds="0.765, 10.835, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2d6a19db-0050-44dc-9878-8050e3f44022" absoluteBounds="3.5, 11.25, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/CampanaCanal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f4cefab-3627-46ba-9a93-1accaf05711b" absoluteBounds="3.515, 11.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="45355cad-6872-4c1f-8182-be69f8d3761f" absoluteBounds="0.75, 15.25, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/Canal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec6784b4-b758-48f1-986a-6c886e3430b3" absoluteBounds="0.765, 15.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0784148d-b6a7-44eb-a822-dc5a22499191" absoluteBounds="1.5, 4.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/Cliente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b195f6f-8317-4b38-8b6d-1ddc2a7179cb" absoluteBounds="1.5150000000000001, 4.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="349c6780-679f-42ad-87d1-1dc33bc55303" absoluteBounds="10.25, 4.375, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/ClienteServicio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c6a78243-9431-45bf-8686-cd18f14642db" absoluteBounds="10.265, 4.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fa2f2822-9ccc-432a-8996-5fc7543e19b3" absoluteBounds="4.25, 20.375, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/Contacto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fcd89bd6-4787-412a-a034-cff1635f86e8" absoluteBounds="4.265, 20.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="16f734ce-895a-4546-914e-7af0ddcb2e2c" absoluteBounds="14.5, 9.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/DiaEspecial" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0455026d-abbe-429a-9764-0ba3cec22be6" absoluteBounds="14.515, 10.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6535e0f7-b06d-4969-915e-f530725e0584" absoluteBounds="9.25, 14, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/EstadoProducto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9a4fd99-8721-4e0c-916c-56905da3bba8" absoluteBounds="9.265, 14.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9098fffe-6f12-4f1e-a5c0-8b3e16ea11a9" absoluteBounds="7, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/Notificacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eb735587-920d-42f6-9f5e-085b04ad183a" absoluteBounds="7.015, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b3d2a4ed-0d4c-45c3-8b5b-753af87a6c66" absoluteBounds="4.5, 28.375, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/Permiso" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9b8693eb-1850-4138-b93b-2522a954999a" absoluteBounds="4.515, 28.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="257640c7-a6a1-4ef7-bbdc-52f6a7f9cb49" absoluteBounds="6.25, 17.625, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/Pieza" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9282d3c8-c5b9-427f-987e-53236c12b2a3" absoluteBounds="6.265, 18.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="19c7143a-a1a8-4660-91ff-d29fc5b52dd9" absoluteBounds="0.75, 7.25, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/PilarEstrategico" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b02315c-b019-4f2a-a485-ccfd0dcec911" absoluteBounds="0.765, 7.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="39c57983-0fee-47b6-b466-58f696782c6c" absoluteBounds="3.5, 8.25, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/PilarEstrategicoCampana" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ac1bcf5a-ee8f-4cd4-9339-b8ce9a9c6a8c" absoluteBounds="3.515, 8.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6f23f904-26cb-49f3-ac71-bbab6fd1af29" absoluteBounds="3.5, 14, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/Producto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1138538f-5d1c-4844-b6cf-2bfbc4cb6f5d" absoluteBounds="3.515, 14.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a034c64b-203b-436b-a741-ef55e0cb7b38" absoluteBounds="9.25, 11, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/ProductoEstadoHistorico" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8bc915d4-e2a0-46c6-8a03-825622d5f2cf" absoluteBounds="9.265, 11.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="23988ebb-0bcd-40f4-b6a2-26092a538b5e" absoluteBounds="7.5, 4.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/Servicio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3255bff6-38c7-4e22-9b1c-903a8d08a8dd" absoluteBounds="7.515, 5.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fb86087f-fc16-47b9-aeae-08f2f410b316" absoluteBounds="6.75, 7.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoAtributo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ee7f0f8-97f6-4bee-80a8-b4e37e761fdd" absoluteBounds="6.765, 8.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1c319e69-770e-4603-95a1-7e8a2ea351cd" absoluteBounds="1.5, 18.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoCanal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3a576e1d-c4dd-4d42-982a-c468bdcf2d2f" absoluteBounds="1.5150000000000001, 18.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3bd362de-6033-4c30-b390-c7620b35c793" absoluteBounds="11.75, 9.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoDiaEspecial" />
+      <nestedChildShapes>
+        <elementListCompartment Id="501ff0d2-10b3-4e5c-8b28-eee53c669963" absoluteBounds="11.765, 10.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="870c5127-2640-48b3-afa8-4b1f3e1418cb" absoluteBounds="4.25, 23.75, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoEstadoNotificacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d30d90dc-f7e9-467f-a3d2-e330ac35feaf" absoluteBounds="4.265, 24.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a65f8ea8-8803-497c-ae2c-43a768c40bb6" absoluteBounds="6.5, 10.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoEstadoProducto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ab5075f9-f9bf-4b90-bf1b-3f303d111b2a" absoluteBounds="6.515, 10.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b7c506e4-bbaf-47c5-9f56-3b9021bb2138" absoluteBounds="4.25, 25.625, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoNotificacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="04e5077e-3307-481c-80dc-7ea58f8f0aa7" absoluteBounds="4.265, 26.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="150d2927-3ced-4dfe-92bb-0d94a5964237" absoluteBounds="0.75, 21.25, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoProducto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0bf0d580-4b32-4f0b-9752-925c1603de1c" absoluteBounds="0.765, 21.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e95ff198-cc80-40e5-b4ea-cc1bf3d4a1ef" absoluteBounds="4.75, 4.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoServicio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e44c0a37-ee82-45e1-a656-4d4a6db1675b" absoluteBounds="4.765, 5.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="931b3109-de88-42a7-91f5-9a6bc8d46c9a" absoluteBounds="1.5, 24.375, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoUsuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="792d1d67-5c0b-497c-b939-2f4cb6ae5dc4" absoluteBounds="1.5150000000000001, 24.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="078b0f09-1211-4483-866c-784c7d47d3a6" absoluteBounds="7.25, 24.25, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoUsuarioPermiso" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cee68870-e4ba-49ac-b25b-d6574ab40c41" absoluteBounds="7.265, 24.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 11.9431469726563); (2.79166666666667 : 11.9431469726562 : JumpStart); (3.08333333333333 : 11.9431469726563 : JumpEnd); (3.5 : 11.9431469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Campana/Campana_CampanaCanal" />
+      <nodes>
+        <classShapeMoniker Id="752288ec-8295-4bbb-bfd0-8ca8fc1d9e14" />
+        <classShapeMoniker Id="2d6a19db-0050-44dc-9878-8050e3f44022" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 15.25); (2.81607443490112 : 15.1839255650989 : JumpStart); (2.93392556509888 : 15.0660744349011 : JumpEnd); (2.94107443490112 : 15.0589255650989 : JumpStart); (3.05892556509888 : 14.9410744349011 : JumpEnd); (3.125 : 14.875); (3.125 : 12.3209724589844); (3.5 : 12.3209724589844)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Canal/Canal_CampanaCanal" />
+      <nodes>
+        <classShapeMoniker Id="45355cad-6872-4c1f-8182-be69f8d3761f" />
+        <classShapeMoniker Id="2d6a19db-0050-44dc-9878-8050e3f44022" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.125 : 5.70359537760417); (3.125 : 7.03125); (5.54166666666667 : 7.03125 : JumpStart); (5.83333333333333 : 7.03125 : JumpEnd); (9.5 : 7.03125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Cliente/Cliente_Atributo" />
+      <nodes>
+        <classShapeMoniker Id="0784148d-b6a7-44eb-a822-dc5a22499191" />
+        <classShapeMoniker Id="d2ed1a0a-897b-47fb-88ad-702a8067c23d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 4.40625); (3.66666666666667 : 4.40625 : JumpStart); (3.83333333333333 : 4.40625 : JumpEnd); (4.46875 : 4.40625); (4.46875 : 3.9631982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Cliente/Cliente_Usuario" />
+      <nodes>
+        <classShapeMoniker Id="0784148d-b6a7-44eb-a822-dc5a22499191" />
+        <classShapeMoniker Id="d8a8706e-13de-41d1-8954-2b17ee6b004e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 4.609375); (3.66666666666667 : 4.609375 : JumpStart); (3.83333333333333 : 4.609375 : JumpEnd); (6.91666666666667 : 4.609375 : JumpStart); (7.08333333333333 : 4.609375 : JumpEnd); (7.16666666666667 : 4.609375 : JumpStart); (7.33333333333333 : 4.609375 : JumpEnd); (10.25 : 4.609375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Cliente/Cliente_ClienteServicio" />
+      <nodes>
+        <classShapeMoniker Id="0784148d-b6a7-44eb-a822-dc5a22499191" />
+        <classShapeMoniker Id="349c6780-679f-42ad-87d1-1dc33bc55303" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.281248 : 5.70359537760417); (2.281248 : 6.75); (2.79166666666667 : 6.75 : JumpStart); (2.95833333333333 : 6.75 : JumpEnd); (3 : 6.75); (3 : 18.125); (3.54166666666667 : 18.125 : JumpStart); (3.70833333333333 : 18.125 : JumpEnd); (3.75 : 18.125); (3.75 : 21.3565991210938); (3.88541666666667 : 21.3565991210938 : JumpStart); (4.05208333333333 : 21.3565991210938 : JumpEnd); (4.25 : 21.3565991210938)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Cliente/Cliente_Contacto" />
+      <nodes>
+        <classShapeMoniker Id="0784148d-b6a7-44eb-a822-dc5a22499191" />
+        <classShapeMoniker Id="fa2f2822-9ccc-432a-8996-5fc7543e19b3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.25 : 2.54890055338542); (6.41666666666667 : 2.54890055338542 : JumpStart); (6.58333333333333 : 2.54890055338542 : JumpEnd); (6.66666666666667 : 2.54890055338542 : JumpStart); (6.83333333333333 : 2.54890055338542 : JumpEnd); (7 : 2.54890055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Usuario/Usuario_Notificacion" />
+      <nodes>
+        <classShapeMoniker Id="d8a8706e-13de-41d1-8954-2b17ee6b004e" />
+        <classShapeMoniker Id="9098fffe-6f12-4f1e-a5c0-8b3e16ea11a9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.828124 : 5.70359537760417); (1.828124 : 7.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Cliente/Cliente_PilarEstrategico" />
+      <nodes>
+        <classShapeMoniker Id="0784148d-b6a7-44eb-a822-dc5a22499191" />
+        <classShapeMoniker Id="19c7143a-a1a8-4660-91ff-d29fc5b52dd9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 10.3765374615385); (2.81607443490112 : 10.3104630266373 : JumpStart); (2.93392556509888 : 10.1926118964396 : JumpEnd); (2.94107443490112 : 10.1854630266373 : JumpStart); (3.05892556509888 : 10.0676118964396 : JumpEnd); (3.125 : 10.0015374615385); (3.125 : 8.94314697265625); (3.5 : 8.94314697265625)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Campana/Campana_PilarEstrategicoCampana" />
+      <nodes>
+        <classShapeMoniker Id="752288ec-8295-4bbb-bfd0-8ca8fc1d9e14" />
+        <classShapeMoniker Id="39c57983-0fee-47b6-b466-58f696782c6c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.44314697265625); (2.79166666666667 : 8.44314697265625 : JumpStart); (3.08333333333333 : 8.44314697265625 : JumpEnd); (3.5 : 8.44314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/PilarEstrategico/PilarEstrategico_PilarEstrategicoCampana" />
+      <nodes>
+        <classShapeMoniker Id="19c7143a-a1a8-4660-91ff-d29fc5b52dd9" />
+        <classShapeMoniker Id="39c57983-0fee-47b6-b466-58f696782c6c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 14.1931469726562); (5.54166666666667 : 14.1931469726562 : JumpStart); (5.83333333333333 : 14.1931469726562 : JumpEnd); (6.25 : 14.1931469726562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Producto/Producto_Calendario" />
+      <nodes>
+        <classShapeMoniker Id="6f23f904-26cb-49f3-ac71-bbab6fd1af29" />
+        <classShapeMoniker Id="7a53e3f5-b768-46c4-af7c-cc6fc64af6b6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 15.1098453776042); (5.54166666666667 : 15.1098453776042 : JumpStart); (5.83333333333333 : 15.1098453776042 : JumpEnd); (9.25 : 15.1098453776042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Producto/Producto_EstadoProducto" />
+      <nodes>
+        <classShapeMoniker Id="6f23f904-26cb-49f3-ac71-bbab6fd1af29" />
+        <classShapeMoniker Id="6535e0f7-b06d-4969-915e-f530725e0584" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.625 : 15.9631982421875); (4.625 : 18.7604484049479); (5.54166666666667 : 18.7604484049479 : JumpStart); (5.83333333333333 : 18.7604484049479 : JumpEnd); (6.25 : 18.7604484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Producto/Producto_Pieza" />
+      <nodes>
+        <classShapeMoniker Id="6f23f904-26cb-49f3-ac71-bbab6fd1af29" />
+        <classShapeMoniker Id="257640c7-a6a1-4ef7-bbdc-52f6a7f9cb49" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 13.430467374399); (2.81607443490112 : 13.4965418093002 : JumpStart); (2.93392556509888 : 13.6143929394979 : JumpEnd); (2.94107443490112 : 13.6215418093002 : JumpStart); (3.05892556509888 : 13.7393929394979 : JumpEnd); (3.06607443490112 : 13.7465418093002 : JumpStart); (3.18392556509888 : 13.8643929394979 : JumpEnd); (3.3125 : 13.992967374399); (3.3125 : 13.8125); (3.5 : 14)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Campana/Campana_Producto" />
+      <nodes>
+        <classShapeMoniker Id="752288ec-8295-4bbb-bfd0-8ca8fc1d9e14" />
+        <classShapeMoniker Id="6f23f904-26cb-49f3-ac71-bbab6fd1af29" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 14); (5.56607443490112 : 13.9339255650989 : JumpStart); (5.68392556509888 : 13.8160744349011 : JumpEnd); (5.69107443490112 : 13.8089255650989 : JumpStart); (5.80892556509888 : 13.6910744349011 : JumpEnd); (5.875 : 13.625); (5.875 : 12.2011941614583); (8.32291666666667 : 12.2011941614583 : JumpStart); (8.48958333333333 : 12.2011941614583 : JumpEnd); (9.25 : 12.2011941614583)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Producto/Producto_ProductoEstadoHistorico" />
+      <nodes>
+        <classShapeMoniker Id="6f23f904-26cb-49f3-ac71-bbab6fd1af29" />
+        <classShapeMoniker Id="a034c64b-203b-436b-a741-ef55e0cb7b38" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.5 : 5.25564697265625); (10.25 : 5.25564697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Servicio/Servicio_ClienteServicio" />
+      <nodes>
+        <classShapeMoniker Id="23988ebb-0bcd-40f4-b6a2-26092a538b5e" />
+        <classShapeMoniker Id="349c6780-679f-42ad-87d1-1dc33bc55303" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 8.16429768880208); (9.5 : 8.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoAtributo/TipoAtributo_Atributo" />
+      <nodes>
+        <classShapeMoniker Id="fb86087f-fc16-47b9-aeae-08f2f410b316" />
+        <classShapeMoniker Id="d2ed1a0a-897b-47fb-88ad-702a8067c23d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.44931705603966 : 9.2612939453125); (7.44931705603966 : 9.5112939453125); (8.06500117938702 : 9.5112939453125); (8.06500117938702 : 9.2612939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoAtributo/TipoAtributo_TipoAtributo" />
+      <nodes>
+        <classShapeMoniker Id="fb86087f-fc16-47b9-aeae-08f2f410b316" />
+        <classShapeMoniker Id="fb86087f-fc16-47b9-aeae-08f2f410b316" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.125 : 18.375); (2.125 : 16.6362939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoCanal/TipoCanal_Canal" />
+      <nodes>
+        <classShapeMoniker Id="1c319e69-770e-4603-95a1-7e8a2ea351cd" />
+        <classShapeMoniker Id="45355cad-6872-4c1f-8182-be69f8d3761f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 10.4719962565104); (14.5 : 10.4719962565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoDiaEspecial/TipoDiaEspecial_DiaEspecial" />
+      <nodes>
+        <classShapeMoniker Id="3bd362de-6033-4c30-b390-c7620b35c793" />
+        <classShapeMoniker Id="16f734ce-895a-4546-914e-7af0ddcb2e2c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.25 : 23.75); (5.25 : 22.5881982421875); (6.5 : 22.5881982421875); (6.5 : 19.6458968098958); (5.75 : 19.6458968098958); (5.75 : 6.3862939453125); (5.98166784605369 : 6.3862939453125 : JumpStart); (6.14833451272035 : 6.3862939453125 : JumpEnd); (7 : 6.3862939453125); (7 : 4.2131982421875); (6.5 : 4.2131982421875); (6.5 : 1.61819827669271); (7 : 1.61819827669271)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoEstadoNotificacion/TipoEstadoNotificacion_Notificacion" />
+      <nodes>
+        <classShapeMoniker Id="870c5127-2640-48b3-afa8-4b1f3e1418cb" />
+        <classShapeMoniker Id="9098fffe-6f12-4f1e-a5c0-8b3e16ea11a9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.40625 : 11.5689925130208); (8.40625 : 14.7480671614583); (9.25 : 14.7480671614583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoEstadoProducto/TipoEstadoProducto_EstadoProducto" />
+      <nodes>
+        <classShapeMoniker Id="a65f8ea8-8803-497c-ae2c-43a768c40bb6" />
+        <classShapeMoniker Id="6535e0f7-b06d-4969-915e-f530725e0584" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 11.2844962565104); (9.25 : 11.2844962565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoEstadoProducto/TipoEstadoProducto_ProductoEstadoHistorico" />
+      <nodes>
+        <classShapeMoniker Id="a65f8ea8-8803-497c-ae2c-43a768c40bb6" />
+        <classShapeMoniker Id="a034c64b-203b-436b-a741-ef55e0cb7b38" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.25 : 25.625); (5.25 : 25.1939925130208); (6.75 : 25.1939925130208); (6.75 : 19.8958968098958); (6.58333333333333 : 19.8958968098958 : JumpStart); (6.41666666666667 : 19.8958968098958 : JumpEnd); (5.625 : 19.8958968098958); (5.625 : 6.6362939453125); (5.66666666666667 : 6.6362939453125 : JumpStart); (5.83333333333333 : 6.6362939453125 : JumpEnd); (7.25 : 6.6362939453125); (7.25 : 3.9631982421875); (6.75 : 3.9631982421875); (6.75 : 2.08354941503906); (7 : 2.08354941503906)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoNotificacion/TipoNotificacion_Notificacion" />
+      <nodes>
+        <classShapeMoniker Id="b7c506e4-bbaf-47c5-9f56-3b9021bb2138" />
+        <classShapeMoniker Id="9098fffe-6f12-4f1e-a5c0-8b3e16ea11a9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 22.4944482421875); (3.54166666666667 : 22.4944482421875 : JumpStart); (3.70833333333333 : 22.4944482421875 : JumpEnd); (3.96875 : 22.4944482421875); (3.96875 : 15.9631982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoProducto/TipoProducto_Producto" />
+      <nodes>
+        <classShapeMoniker Id="150d2927-3ced-4dfe-92bb-0d94a5964237" />
+        <classShapeMoniker Id="6f23f904-26cb-49f3-ac71-bbab6fd1af29" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.44931705603966 : 22.6362939453125); (1.44931705603966 : 22.8862939453125); (2.06500117938702 : 22.8862939453125); (2.06500117938702 : 22.6362939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoProducto/TipoProducto_TipoProducto" />
+      <nodes>
+        <classShapeMoniker Id="150d2927-3ced-4dfe-92bb-0d94a5964237" />
+        <classShapeMoniker Id="150d2927-3ced-4dfe-92bb-0d94a5964237" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.75 : 5.44314697265625); (6.91666666666667 : 5.44314697265625 : JumpStart); (7.08333333333333 : 5.44314697265625 : JumpEnd); (7.16666666666667 : 5.44314697265625 : JumpStart); (7.33333333333333 : 5.44314697265625 : JumpEnd); (7.5 : 5.44314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoServicio/TipoServicio_Servicio" />
+      <nodes>
+        <classShapeMoniker Id="e95ff198-cc80-40e5-b4ea-cc1bf3d4a1ef" />
+        <classShapeMoniker Id="23988ebb-0bcd-40f4-b6a2-26092a538b5e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.44931705603966 : 6.1362939453125); (5.44931705603966 : 6.5112939453125); (5.66666666666667 : 6.5112939453125 : JumpStart); (5.83333333333333 : 6.5112939453125 : JumpEnd); (6.06500117938702 : 6.5112939453125); (6.06500117938702 : 6.1362939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoServicio/TipoServicio_TipoServicio" />
+      <nodes>
+        <classShapeMoniker Id="e95ff198-cc80-40e5-b4ea-cc1bf3d4a1ef" />
+        <classShapeMoniker Id="e95ff198-cc80-40e5-b4ea-cc1bf3d4a1ef" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.78250008969351 : 24.375); (2.78250008969351 : 22.8862939453125); (3.625 : 22.8862939453125); (3.625 : 16.8862939453125); (3.08333333333333 : 16.8862939453125 : JumpStart); (2.91666666666667 : 16.8862939453125 : JumpEnd); (2.875 : 16.8862939453125); (2.875 : 5.95359537760417); (3.04166666666667 : 5.95359537760417 : JumpStart); (3.20833333333333 : 5.95359537760417 : JumpEnd); (3.75 : 5.95359537760417); (3.75 : 2.98159912109375); (4.25 : 2.98159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoUsuario/TipoUsuario_Usuario" />
+      <nodes>
+        <classShapeMoniker Id="931b3109-de88-42a7-91f5-9a6bc8d46c9a" />
+        <classShapeMoniker Id="d8a8706e-13de-41d1-8954-2b17ee6b004e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.40625 : 28.375); (6.40625 : 25.3782462565104); (7.25 : 25.3782462565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/Permiso/Permiso_TipoUsuarioPermiso" />
+      <nodes>
+        <classShapeMoniker Id="b3d2a4ed-0d4c-45c3-8b5b-753af87a6c66" />
+        <classShapeMoniker Id="078b0f09-1211-4483-866c-784c7d47d3a6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 25.5361193847656); (5.16666666666667 : 25.5361193847656 : JumpStart); (5.33333333333333 : 25.5361193847656 : JumpEnd); (6.32291666666667 : 25.5361193847656 : JumpStart); (6.48958333333333 : 25.5361193847656 : JumpEnd); (7.25 : 25.5361193847656)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DEFECTPlanEstrategicoDataContext/TipoUsuario/TipoUsuario_TipoUsuarioPermiso" />
+      <nodes>
+        <classShapeMoniker Id="931b3109-de88-42a7-91f5-9a6bc8d46c9a" />
+        <classShapeMoniker Id="078b0f09-1211-4483-866c-784c7d47d3a6" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

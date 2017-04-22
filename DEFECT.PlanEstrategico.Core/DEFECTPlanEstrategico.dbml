@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DEFECT_PlanEstrategico" Class="DEFECTPlanEstrategicoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=DEFECT_PlanEstrategico;Integrated Security=True" SettingsObjectName="DEFECT.PlanEstrategico.Core.Properties.Settings" SettingsPropertyName="DEFECT_PlanEstrategicoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Atributo" Member="Atributos">
+    <Type Name="Atributo">
+      <Column Name="IdAtributo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTipoAtributo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdCliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="Cliente_Atributo" Member="Cliente" ThisKey="IdCliente" OtherKey="IdCliente" Type="Cliente" IsForeignKey="true" />
+      <Association Name="TipoAtributo_Atributo" Member="TipoAtributo" ThisKey="IdTipoAtributo" OtherKey="IdTipoAtributo" Type="TipoAtributo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Usuario" Member="Usuarios">
+    <Type Name="Usuario">
+      <Column Name="IdUsuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTipoUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdCliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ApellidoPaterno" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Correo" Type="System.String" DbType="NVarChar(225) NOT NULL" CanBeNull="false" />
+      <Association Name="Usuario_Notificacion" Member="Notificacions" ThisKey="IdUsuario" OtherKey="IdUsuario" Type="Notificacion" />
+      <Association Name="Cliente_Usuario" Member="Cliente" ThisKey="IdCliente" OtherKey="IdCliente" Type="Cliente" IsForeignKey="true" />
+      <Association Name="TipoUsuario_Usuario" Member="TipoUsuario" ThisKey="IdTipoUsuario" OtherKey="IdTipoUsuario" Type="TipoUsuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Calendario" Member="Calendarios">
+    <Type Name="Calendario">
+      <Column Name="IdCalendario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdProducto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="Producto_Calendario" Member="Producto" ThisKey="IdProducto" OtherKey="IdProducto" Type="Producto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Campana" Member="Campanas">
+    <Type Name="Campana">
+      <Column Name="IdCampana" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaInicio" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="FechaFin" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Tema" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ObjetivoComercial" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Responsable" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Contralor" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Presupuesto" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Inversion" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="FechaCreacion" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreadoPor" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="Campana_CampanaCanal" Member="CampanaCanals" ThisKey="IdCampana" OtherKey="IdCampana" Type="CampanaCanal" />
+      <Association Name="Campana_PilarEstrategicoCampana" Member="PilarEstrategicoCampanas" ThisKey="IdCampana" OtherKey="IdCampana" Type="PilarEstrategicoCampana" />
+      <Association Name="Campana_Producto" Member="Productos" ThisKey="IdCampana" OtherKey="IdCampana" Type="Producto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CampanaCanal" Member="CampanaCanals">
+    <Type Name="CampanaCanal">
+      <Column Name="IdCampanaCanal" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdCampana" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdCanal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Campana_CampanaCanal" Member="Campana" ThisKey="IdCampana" OtherKey="IdCampana" Type="Campana" IsForeignKey="true" />
+      <Association Name="Canal_CampanaCanal" Member="Canal" ThisKey="IdCanal" OtherKey="IdCanal" Type="Canal" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Canal" Member="Canals">
+    <Type Name="Canal">
+      <Column Name="IdCanal" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTipoCanal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="Canal_CampanaCanal" Member="CampanaCanals" ThisKey="IdCanal" OtherKey="IdCanal" Type="CampanaCanal" />
+      <Association Name="TipoCanal_Canal" Member="TipoCanal" ThisKey="IdTipoCanal" OtherKey="IdTipoCanal" Type="TipoCanal" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cliente" Member="Clientes">
+    <Type Name="Cliente">
+      <Column Name="IdCliente" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="RazonSocial" Type="System.String" DbType="NVarChar(2047)" CanBeNull="true" />
+      <Column Name="Rut" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Cliente_Atributo" Member="Atributos" ThisKey="IdCliente" OtherKey="IdCliente" Type="Atributo" />
+      <Association Name="Cliente_Usuario" Member="Usuarios" ThisKey="IdCliente" OtherKey="IdCliente" Type="Usuario" />
+      <Association Name="Cliente_ClienteServicio" Member="ClienteServicios" ThisKey="IdCliente" OtherKey="IdCliente" Type="ClienteServicio" />
+      <Association Name="Cliente_Contacto" Member="Contactos" ThisKey="IdCliente" OtherKey="IdCliente" Type="Contacto" />
+      <Association Name="Cliente_PilarEstrategico" Member="PilarEstrategicos" ThisKey="IdCliente" OtherKey="IdCliente" Type="PilarEstrategico" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ClienteServicio" Member="ClienteServicios">
+    <Type Name="ClienteServicio">
+      <Column Name="IdClienteServicio" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdCliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdServicio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Cliente_ClienteServicio" Member="Cliente" ThisKey="IdCliente" OtherKey="IdCliente" Type="Cliente" IsForeignKey="true" />
+      <Association Name="Servicio_ClienteServicio" Member="Servicio" ThisKey="IdServicio" OtherKey="IdServicio" Type="Servicio" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Contacto" Member="Contactos">
+    <Type Name="Contacto">
+      <Column Name="IdContacto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdCliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ApellidoPaterno" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Correo" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="Cliente_Contacto" Member="Cliente" ThisKey="IdCliente" OtherKey="IdCliente" Type="Cliente" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DiaEspecial" Member="DiaEspecials">
+    <Type Name="DiaEspecial">
+      <Column Name="IdDiaEspecial" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTipoDiaEspecial" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="TipoDiaEspecial_DiaEspecial" Member="TipoDiaEspecial" ThisKey="IdTipoDiaEspecial" OtherKey="IdTipoDiaEspecial" Type="TipoDiaEspecial" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EstadoProducto" Member="EstadoProductos">
+    <Type Name="EstadoProducto">
+      <Column Name="IdEstadoProducto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTipoEstadoProducto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaCreacion" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreadoPor" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="Producto_EstadoProducto" Member="Producto" ThisKey="IdEstadoProducto" OtherKey="IdProducto" Type="Producto" IsForeignKey="true" />
+      <Association Name="TipoEstadoProducto_EstadoProducto" Member="TipoEstadoProducto" ThisKey="IdTipoEstadoProducto" OtherKey="IdTipoEstadoProdcuto" Type="TipoEstadoProducto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Notificacion" Member="Notificacions">
+    <Type Name="Notificacion">
+      <Column Name="IdNotificacion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTipoNotificacion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdTipoEstadoNotificacion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaCreacion" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FechaPostpuesto" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Mensaje" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Accion" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="Usuario_Notificacion" Member="Usuario" ThisKey="IdUsuario" OtherKey="IdUsuario" Type="Usuario" IsForeignKey="true" />
+      <Association Name="TipoEstadoNotificacion_Notificacion" Member="TipoEstadoNotificacion" ThisKey="IdTipoEstadoNotificacion" OtherKey="IdTipoEstadoNotificacion" Type="TipoEstadoNotificacion" IsForeignKey="true" />
+      <Association Name="TipoNotificacion_Notificacion" Member="TipoNotificacion" ThisKey="IdTipoNotificacion" OtherKey="IdTipoNotificacion" Type="TipoNotificacion" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Permiso" Member="Permisos">
+    <Type Name="Permiso">
+      <Column Name="IdPermiso" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="Permiso_TipoUsuarioPermiso" Member="TipoUsuarioPermisos" ThisKey="IdPermiso" OtherKey="IdPermiso" Type="TipoUsuarioPermiso" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pieza" Member="Piezas">
+    <Type Name="Pieza">
+      <Column Name="IdPieza" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdProducto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaCreacion" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreadoPor" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Url" Type="System.String" DbType="NVarChar(2047) NOT NULL" CanBeNull="false" />
+      <Association Name="Producto_Pieza" Member="Producto" ThisKey="IdProducto" OtherKey="IdProducto" Type="Producto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PilarEstrategico" Member="PilarEstrategicos">
+    <Type Name="PilarEstrategico">
+      <Column Name="IdPilarEstrategico" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdCliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="PilarEstrategico_PilarEstrategicoCampana" Member="PilarEstrategicoCampanas" ThisKey="IdPilarEstrategico" OtherKey="IdPilarEstrategico" Type="PilarEstrategicoCampana" />
+      <Association Name="Cliente_PilarEstrategico" Member="Cliente" ThisKey="IdCliente" OtherKey="IdCliente" Type="Cliente" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PilarEstrategicoCampana" Member="PilarEstrategicoCampanas">
+    <Type Name="PilarEstrategicoCampana">
+      <Column Name="IdPilarEstrategicoCampana" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdPilarEstrategico" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdCampana" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Campana_PilarEstrategicoCampana" Member="Campana" ThisKey="IdCampana" OtherKey="IdCampana" Type="Campana" IsForeignKey="true" />
+      <Association Name="PilarEstrategico_PilarEstrategicoCampana" Member="PilarEstrategico" ThisKey="IdPilarEstrategico" OtherKey="IdPilarEstrategico" Type="PilarEstrategico" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Producto" Member="Productos">
+    <Type Name="Producto">
+      <Column Name="IdProducto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTipoProducto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdCampana" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaCreacion" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreadoPor" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="Producto_Calendario" Member="Calendarios" ThisKey="IdProducto" OtherKey="IdProducto" Type="Calendario" />
+      <Association Name="Producto_EstadoProducto" Member="EstadoProducto" ThisKey="IdProducto" OtherKey="IdEstadoProducto" Type="EstadoProducto" Cardinality="One" />
+      <Association Name="Producto_Pieza" Member="Piezas" ThisKey="IdProducto" OtherKey="IdProducto" Type="Pieza" />
+      <Association Name="Producto_ProductoEstadoHistorico" Member="ProductoEstadoHistoricos" ThisKey="IdProducto" OtherKey="IdProducto" Type="ProductoEstadoHistorico" />
+      <Association Name="Campana_Producto" Member="Campana" ThisKey="IdCampana" OtherKey="IdCampana" Type="Campana" IsForeignKey="true" />
+      <Association Name="TipoProducto_Producto" Member="TipoProducto" ThisKey="IdTipoProducto" OtherKey="IdTipoProducto" Type="TipoProducto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductoEstadoHistorico" Member="ProductoEstadoHistoricos">
+    <Type Name="ProductoEstadoHistorico">
+      <Column Name="IdProductoEstadoHistorico" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdProducto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdTipoEstadoProducto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaCreacion" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreadoPor" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="Producto_ProductoEstadoHistorico" Member="Producto" ThisKey="IdProducto" OtherKey="IdProducto" Type="Producto" IsForeignKey="true" />
+      <Association Name="TipoEstadoProducto_ProductoEstadoHistorico" Member="TipoEstadoProducto" ThisKey="IdTipoEstadoProducto" OtherKey="IdTipoEstadoProdcuto" Type="TipoEstadoProducto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Servicio" Member="Servicios">
+    <Type Name="Servicio">
+      <Column Name="IdServicio" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTipoServicio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="Servicio_ClienteServicio" Member="ClienteServicios" ThisKey="IdServicio" OtherKey="IdServicio" Type="ClienteServicio" />
+      <Association Name="TipoServicio_Servicio" Member="TipoServicio" ThisKey="IdTipoServicio" OtherKey="IdTipoServicio" Type="TipoServicio" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoAtributo" Member="TipoAtributos">
+    <Type Name="TipoAtributo">
+      <Column Name="IdTipoAtributo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTipoAtributoPadre" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="TipoAtributo_Atributo" Member="Atributos" ThisKey="IdTipoAtributo" OtherKey="IdTipoAtributo" Type="Atributo" />
+      <Association Name="TipoAtributo_TipoAtributo" Member="TipoAtributos" ThisKey="IdTipoAtributo" OtherKey="IdTipoAtributoPadre" Type="TipoAtributo" />
+      <Association Name="TipoAtributo_TipoAtributo" Member="TipoAtributo1" ThisKey="IdTipoAtributoPadre" OtherKey="IdTipoAtributo" Type="TipoAtributo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoCanal" Member="TipoCanals">
+    <Type Name="TipoCanal">
+      <Column Name="IdTipoCanal" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="TipoCanal_Canal" Member="Canals" ThisKey="IdTipoCanal" OtherKey="IdTipoCanal" Type="Canal" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoDiaEspecial" Member="TipoDiaEspecials">
+    <Type Name="TipoDiaEspecial">
+      <Column Name="IdTipoDiaEspecial" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="TipoDiaEspecial_DiaEspecial" Member="DiaEspecials" ThisKey="IdTipoDiaEspecial" OtherKey="IdTipoDiaEspecial" Type="DiaEspecial" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoEstadoNotificacion" Member="TipoEstadoNotificacions">
+    <Type Name="TipoEstadoNotificacion">
+      <Column Name="IdTipoEstadoNotificacion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="TipoEstadoNotificacion_Notificacion" Member="Notificacions" ThisKey="IdTipoEstadoNotificacion" OtherKey="IdTipoEstadoNotificacion" Type="Notificacion" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoEstadoProducto" Member="TipoEstadoProductos">
+    <Type Name="TipoEstadoProducto">
+      <Column Name="IdTipoEstadoProdcuto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="TipoEstadoProducto_EstadoProducto" Member="EstadoProductos" ThisKey="IdTipoEstadoProdcuto" OtherKey="IdTipoEstadoProducto" Type="EstadoProducto" />
+      <Association Name="TipoEstadoProducto_ProductoEstadoHistorico" Member="ProductoEstadoHistoricos" ThisKey="IdTipoEstadoProdcuto" OtherKey="IdTipoEstadoProducto" Type="ProductoEstadoHistorico" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoNotificacion" Member="TipoNotificacions">
+    <Type Name="TipoNotificacion">
+      <Column Name="IdTipoNotificacion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="TipoNotificacion_Notificacion" Member="Notificacions" ThisKey="IdTipoNotificacion" OtherKey="IdTipoNotificacion" Type="Notificacion" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoProducto" Member="TipoProductos">
+    <Type Name="TipoProducto">
+      <Column Name="IdTipoProducto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTipoProductoPadre" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="TipoProducto_Producto" Member="Productos" ThisKey="IdTipoProducto" OtherKey="IdTipoProducto" Type="Producto" />
+      <Association Name="TipoProducto_TipoProducto" Member="TipoProductos" ThisKey="IdTipoProducto" OtherKey="IdTipoProductoPadre" Type="TipoProducto" />
+      <Association Name="TipoProducto_TipoProducto" Member="TipoProducto1" ThisKey="IdTipoProductoPadre" OtherKey="IdTipoProducto" Type="TipoProducto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoServicio" Member="TipoServicios">
+    <Type Name="TipoServicio">
+      <Column Name="IdTipoServicio" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTipoServicioPadre" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="TipoServicio_Servicio" Member="Servicios" ThisKey="IdTipoServicio" OtherKey="IdTipoServicio" Type="Servicio" />
+      <Association Name="TipoServicio_TipoServicio" Member="TipoServicios" ThisKey="IdTipoServicio" OtherKey="IdTipoServicioPadre" Type="TipoServicio" />
+      <Association Name="TipoServicio_TipoServicio" Member="TipoServicio1" ThisKey="IdTipoServicioPadre" OtherKey="IdTipoServicio" Type="TipoServicio" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoUsuario" Member="TipoUsuarios">
+    <Type Name="TipoUsuario">
+      <Column Name="IdTipoUsuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="TipoUsuario_Usuario" Member="Usuarios" ThisKey="IdTipoUsuario" OtherKey="IdTipoUsuario" Type="Usuario" />
+      <Association Name="TipoUsuario_TipoUsuarioPermiso" Member="TipoUsuarioPermisos" ThisKey="IdTipoUsuario" OtherKey="IdTipoUsuario" Type="TipoUsuarioPermiso" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoUsuarioPermiso" Member="TipoUsuarioPermisos">
+    <Type Name="TipoUsuarioPermiso">
+      <Column Name="IdTipoUsuarioPermiso" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTipoUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPermiso" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Permiso_TipoUsuarioPermiso" Member="Permiso" ThisKey="IdPermiso" OtherKey="IdPermiso" Type="Permiso" IsForeignKey="true" />
+      <Association Name="TipoUsuario_TipoUsuarioPermiso" Member="TipoUsuario" ThisKey="IdTipoUsuario" OtherKey="IdTipoUsuario" Type="TipoUsuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,12 @@
+c:\users\nico\documents\visual studio 2017\Projects\DEFECT.PlanEstrategico\DEFECT.PlanEstrategico.Core\bin\Debug\DEFECT.PlanEstrategico.Core.dll.config
+c:\users\nico\documents\visual studio 2017\Projects\DEFECT.PlanEstrategico\DEFECT.PlanEstrategico.Core\bin\Debug\DEFECT.PlanEstrategico.Core.dll
+c:\users\nico\documents\visual studio 2017\Projects\DEFECT.PlanEstrategico\DEFECT.PlanEstrategico.Core\bin\Debug\DEFECT.PlanEstrategico.Core.pdb
+c:\users\nico\documents\visual studio 2017\Projects\DEFECT.PlanEstrategico\DEFECT.PlanEstrategico.Core\obj\Debug\DEFECT.PlanEstrategico.Core.csprojResolveAssemblyReference.cache
+c:\users\nico\documents\visual studio 2017\Projects\DEFECT.PlanEstrategico\DEFECT.PlanEstrategico.Core\obj\Debug\DEFECT.PlanEstrategico.Core.dll
+c:\users\nico\documents\visual studio 2017\Projects\DEFECT.PlanEstrategico\DEFECT.PlanEstrategico.Core\obj\Debug\DEFECT.PlanEstrategico.Core.pdb
+C:\Users\Nico\Source\Repos\DEFECT.PlanEstrategico\DEFECT.PlanEstrategico.Core\bin\Debug\DEFECT.PlanEstrategico.Core.dll.config
+C:\Users\Nico\Source\Repos\DEFECT.PlanEstrategico\DEFECT.PlanEstrategico.Core\bin\Debug\DEFECT.PlanEstrategico.Core.dll
+C:\Users\Nico\Source\Repos\DEFECT.PlanEstrategico\DEFECT.PlanEstrategico.Core\bin\Debug\DEFECT.PlanEstrategico.Core.pdb
+C:\Users\Nico\Source\Repos\DEFECT.PlanEstrategico\DEFECT.PlanEstrategico.Core\obj\Debug\DEFECT.PlanEstrategico.Core.csprojResolveAssemblyReference.cache
+C:\Users\Nico\Source\Repos\DEFECT.PlanEstrategico\DEFECT.PlanEstrategico.Core\obj\Debug\DEFECT.PlanEstrategico.Core.dll
+C:\Users\Nico\Source\Repos\DEFECT.PlanEstrategico\DEFECT.PlanEstrategico.Core\obj\Debug\DEFECT.PlanEstrategico.Core.pdb
